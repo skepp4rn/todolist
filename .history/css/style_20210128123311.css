@@ -1,0 +1,173 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    width: 50vw;
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-top: 5rem;
+    padding-bottom: 2   rem;
+    height: 12vw;
+}
+
+.container2 {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+    height: 25vw;
+    overflow-y: auto;
+}
+
+#header {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#btn {
+    border: none;
+    border-radius: 3px;
+    padding: 0.2rem;
+    background-color: #f0cf9f;
+    color: #ffffff;
+    font-size: 13pt;
+    width: 5rem;
+    height: 2.3rem;
+    align-self: center;
+    margin-bottom: 200px;
+    
+}
+
+.todobox {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 32vw;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.knappar {
+    display: grid;
+    gap: 1rem;
+}
+
+.todoinput {
+    display: flex;
+    align-items: center;
+}
+
+.fa-trash {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #f0cf9f;
+    width: 5rem;
+}
+
+.fa-undo {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #f0cf9f;
+    width: 5rem;
+}
+
+.done {
+    border: none;
+    border-radius: 3px;
+    padding: 0.2rem;
+    background-color: #f0cf9f;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    width: 4rem;
+    height: 2.2rem;
+}
+
+.form-control {
+    border: none;
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    font-size: 14pt;
+}
+
+
+.form {
+    display: grid;
+    grid-template-columns: 3.3fr 1fr;
+    justify-items: center;
+    height: 70px;
+}
+
+.form-control input {
+    border: 2px solid #f0cf9f;
+    border-radius:3px;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    height: 3rem;
+}
+
+.form-control label {
+    color: rgb(44, 44, 44);
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 2.4rem;
+    right: 1.5rem;
+}
+
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 1;
+    left: 7vw;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+
